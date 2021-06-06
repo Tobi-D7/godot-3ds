@@ -1122,22 +1122,7 @@ def update_version():
 	import version
 
 
-	f=open("core/version.h","wb")
-	f.write("/* THIS FILE IS GENERATED DO NOT EDIT */\n")
-        f.write("ifndef VERSION_H\n")
-        f.write("define VERSION_H\n")
-        f.write('define VERSION_SHORT_NAME "' + str(version.short_name) + '"\n')
-        f.write('define VERSION_NAME "' + str(version.name) + '"\n')
-        f.write("define VERSION_MAJOR " + str(version.major) + "\n")
-        f.write("define VERSION_MINOR " + str(version.minor) + "\n")
-        f.write("define VERSION_PATCH " + str(version.patch) + "\n")
-        f.write('define VERSION_STATUS "' + str(version.status) + '"\n')
-        f.write('define VERSION_BUILD "' + str(build_name) + '"\n')
-        f.write('define VERSION_MODULE_CONFIG "' + str(version.module_config) + module_version_string + '"\n')
-        f.write("define VERSION_YEAR " + str(version.year) + "\n")
-        f.write('define VERSION_WEBSITE "' + str(version.website) + '"\n')
-        f.write("endif // VERSION_H\n")
-        f.close()
+	
 
 def parse_cg_file(fname, uniforms, sizes, conditionals):
 
