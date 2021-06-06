@@ -715,11 +715,11 @@ def include_file_in_legacygl_header( filename, header_data, depth ):
 			if (not included_file in header_data.vertex_included_files and header_data.reading=="vertex"):
 				header_data.vertex_included_files+=[included_file]
 				if(include_file_in_legacygl_header( included_file, header_data, depth + 1 ) == None):
-					 print "Error in file '" + filename + "': #include " + includeline + "could not be found!"
+					 print("Error in file '" + filename + "': #include " + includeline + "could not be found!") 
 			elif (not included_file in header_data.fragment_included_files and header_data.reading=="fragment"):
 				header_data.fragment_included_files+=[included_file]
 				if(include_file_in_legacygl_header( included_file, header_data, depth + 1 ) == None):
-					 print "Error in file '" + filename + "': #include " + includeline + "could not be found!"
+					 print("Error in file '" + filename + "': #include " + includeline + "could not be found!") 
 			
 			line=fs.readline()
 
@@ -1273,9 +1273,9 @@ def win32_spawn(sh, escape, cmd, args, env):
 	data, err = proc.communicate()
 	rv = proc.wait()
 	if rv:
-		print "====="
-		print err
-		print "====="
+		print("=====") 
+		print(err) 
+		print("=====") 
 	return rv
 
 """
@@ -1366,9 +1366,9 @@ def use_windows_spawn_fix(self, platform=None):
 	    data, err = proc.communicate()
 	    rv = proc.wait()
 	    if rv:
-		    print "====="
-		    print err
-		    print "====="
+		    print("=====") 
+		    print(err) 
+		    print("=====") 
 	    return rv
 
     def mySpawn(sh, escape, cmd, args, env):
