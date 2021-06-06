@@ -1348,7 +1348,7 @@ def disable_module(self):
 def use_windows_spawn_fix(self, platform=None):
 
     if (os.name!="nt"):
-	return #not needed, only for windows
+	return 0
 
     self.split_drivers=True
 
