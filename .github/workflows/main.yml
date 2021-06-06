@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Set up
         run: |
-          sudo apt install python2.7 \
+          sudo apt install python2.7
           sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
           libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libfreetype6-dev libssl-dev libudev-dev \
           libxrandr-dev
