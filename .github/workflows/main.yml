@@ -32,6 +32,13 @@ jobs:
           sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
           libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libfreetype6-dev libssl-dev libudev-dev \
           libxrandr-dev
+          sudo mkdir /opt/devkitpro
+          
+          cp -r 'setup-2016/devkitARM/' '/opt/devkitpro/'
+          cp -r 'setup-2016/libctru/' '/opt/devkitpro/'
+          export DEVKITPRO=/opt/devkitpro
+          export DEVKITARM=/opt/devkitpro/devkitARM
+          export CTRULIB=/opt/devkitpro/libctru
       - name: Compile
         run: scons platform=3ds
       - name: Upload
