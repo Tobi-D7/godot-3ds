@@ -20,7 +20,7 @@ def add_source_files(self, sources, filetype, lib_env = None, shared = False):
 def build_shader_header( target, source, env ):
 
 	for x in source:
-		print x
+		
 
 		name = str(x)
 		name = name[ name.rfind("/")+1: ]
