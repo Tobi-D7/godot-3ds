@@ -2,7 +2,7 @@ import os
 import sys
 import string
 import platform
-
+#s
 def is_active():
 	return True
 

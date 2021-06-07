@@ -1,5 +1,5 @@
 import os
-
+ #2
 def add_source_files(self, sources, filetype, lib_env = None, shared = False):
 	import glob;
 	import string;

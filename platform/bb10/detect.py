@@ -3,7 +3,7 @@ import sys
 import string
 import methods
 
-
+#ä
 def is_active():
 	return True
 

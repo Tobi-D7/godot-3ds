@@ -10,7 +10,7 @@ def is_active():
 def get_name():
         return "X11"
 
-
+#g
 def can_build():
 
 	if (os.name!="posix"):
