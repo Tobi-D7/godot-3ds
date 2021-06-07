@@ -46,6 +46,6 @@ jobs:
           export DEVKITARM=/opt/devkitpro/devkitARM
           export CTRULIB=/opt/devkitpro/libctru
       - name: Compile
-        run: scons platform=x11
+        run: scons p=3ds -j4 target=release
       - name: Upload
         run: echo hello
