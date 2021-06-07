@@ -33,7 +33,7 @@ jobs:
           
           sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
           libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libfreetype6-dev libssl-dev libudev-dev \
-          libxrandr-dev zlib 
+          libxrandr-dev libpng-dev zlib1g-dev 
           sudo mkdir /opt/devkitpro
           
           cp -r 'setup-2016/devkitARM/' '/opt/devkitpro/'
