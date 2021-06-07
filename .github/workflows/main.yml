@@ -34,8 +34,12 @@ jobs:
           sudo apt-get install build-essential scons pkg-config libx11-dev libxcursor-dev libxinerama-dev \
           libgl1-mesa-dev libglu-dev libasound2-dev libpulse-dev libfreetype6-dev libssl-dev libudev-dev \
           libxrandr-dev libpng-dev zlib1g-dev 
-          sudo mkdir /opt/devkitpro
+          tar -xf 3ds-libpng-1.6.34-1-any.pkg.tar.xz -C setup-2016
+
+          tar -xf 3ds-zlib-1.2.11-1-any.pkg.tar.xz -C setup-2016
           
+          sudo mkdir /opt/devkitpro
+          cp - r setup-2016/opt/devkitpro/portlibs/ /opt/devkitpro/
           cp -r 'setup-2016/devkitARM/' '/opt/devkitpro/'
           cp -r 'setup-2016/libctru/' '/opt/devkitpro/'
           export DEVKITPRO=/opt/devkitpro
