@@ -26,5 +26,5 @@ https://godotengine.org
 See docs for compilation instructions for every platform:
 http://docs.godotengine.org/en/latest/reference/_compiling.html
 
-[![Build Status](https://travis-ci.org/godotengine/godot.svg?branch=master)](https://travis-ci.org/godotengine/godot)
+[![Build Status](https://travis-ci.org/Tobi-D7/godot-3ds.svg?branch=master)](https://travis-ci.org/Tobi-D7/godot-3ds)
 [![Code Triagers Badge](http://www.codetriage.com/godotengine/godot/badges/users.svg)](http://www.codetriage.com/godotengine/godot)
