@@ -12,8 +12,6 @@ def get_name():
 def can_build():
 
         import os
-        if (not os.environ.has_key("ANDROID_NDK_ROOT")):
-        	return False
 
 	return True
 

@@ -13,8 +13,7 @@ def get_name():
 def can_build():
 
 	import os
-	if (not os.environ.has_key("QNX_TARGET")):
-		return False
+	
 	return True
 
 def get_opts():

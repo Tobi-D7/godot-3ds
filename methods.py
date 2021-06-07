@@ -20,7 +20,7 @@ def add_source_files(self, sources, filetype, lib_env = None, shared = False):
 def build_shader_header( target, source, env ):
 
 	for x in source:
-		print x
+		
 
 		name = str(x)
 		name = name[ name.rfind("/")+1: ]
@@ -715,11 +715,11 @@ def include_file_in_legacygl_header( filename, header_data, depth ):
 			if (not included_file in header_data.vertex_included_files and header_data.reading=="vertex"):
 				header_data.vertex_included_files+=[included_file]
 				if(include_file_in_legacygl_header( included_file, header_data, depth + 1 ) == None):
-					 print "Error in file '" + filename + "': #include " + includeline + "could not be found!"
+					 print("Error in file '" + filename + "': #include " + includeline + "could not be found!") 
 			elif (not included_file in header_data.fragment_included_files and header_data.reading=="fragment"):
 				header_data.fragment_included_files+=[included_file]
 				if(include_file_in_legacygl_header( included_file, header_data, depth + 1 ) == None):
-					 print "Error in file '" + filename + "': #include " + includeline + "could not be found!"
+					 print("Error in file '" + filename + "': #include " + includeline + "could not be found!") 
 			
 			line=fs.readline()
 
@@ -1122,17 +1122,7 @@ def update_version():
 	import version
 
 
-	f=open("core/version.h","wb")
-	f.write("#define VERSION_SHORT_NAME "+str(version.short_name)+"\n")
-	f.write("#define VERSION_NAME "+str(version.name)+"\n")
-	f.write("#define VERSION_MAJOR "+str(version.major)+"\n")
-	f.write("#define VERSION_MINOR "+str(version.minor)+"\n")
-	if (hasattr(version, 'patch')):
-	    f.write("#define VERSION_PATCH "+str(version.patch)+"\n")
-	f.write("#define VERSION_REVISION "+str(rev)+"\n")
-	f.write("#define VERSION_STATUS "+str(version.status)+"\n")
-	import datetime
-	f.write("#define VERSION_YEAR "+str(datetime.datetime.now().year)+"\n")
+	
 
 def parse_cg_file(fname, uniforms, sizes, conditionals):
 
@@ -1273,9 +1263,9 @@ def win32_spawn(sh, escape, cmd, args, env):
 	data, err = proc.communicate()
 	rv = proc.wait()
 	if rv:
-		print "====="
-		print err
-		print "====="
+		print("=====") 
+		print(err) 
+		print("=====") 
 	return rv
 
 """
@@ -1347,8 +1337,6 @@ def disable_module(self):
 
 def use_windows_spawn_fix(self, platform=None):
 
-    if (os.name!="nt"):
-	return #not needed, only for windows
 
     self.split_drivers=True
 
@@ -1366,9 +1354,9 @@ def use_windows_spawn_fix(self, platform=None):
 	    data, err = proc.communicate()
 	    rv = proc.wait()
 	    if rv:
-		    print "====="
-		    print err
-		    print "====="
+		    print("=====") 
+		    print(err) 
+		    print("=====") 
 	    return rv
 
     def mySpawn(sh, escape, cmd, args, env):

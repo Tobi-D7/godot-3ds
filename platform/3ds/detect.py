@@ -13,14 +13,7 @@ def get_name():
 
 def can_build():
 
-	if (not os.environ.has_key("DEVKITPRO")):
-		return False
-	if (not os.environ.has_key("DEVKITARM")):
-		return False
-	if (not os.environ.has_key("CTRULIB")):
-		return False
-	if (os.name=="nt"):
-		return False
+	
 	
 	envstr='PKG_CONFIG_DIR= PKG_CONFIG_PATH= PKG_CONFIG_LIBDIR=${DEVKITPRO}/portlibs/3ds/lib/pkgconfig:${DEVKITPRO}/portlibs/armv6k/lib/pkgconfig'
 
