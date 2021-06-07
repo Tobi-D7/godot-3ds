@@ -39,7 +39,7 @@ jobs:
           tar -xf 3ds-zlib-1.2.11-1-any.pkg.tar.xz -C setup-2016
           
           sudo mkdir /opt/devkitpro
-          cp - r setup-2016/opt/devkitpro/portlibs/ /opt/devkitpro/
+          cp -r setup-2016/opt/devkitpro/portlibs/ /opt/devkitpro/
           cp -r 'setup-2016/devkitARM/' '/opt/devkitpro/'
           cp -r 'setup-2016/libctru/' '/opt/devkitpro/'
           export DEVKITPRO=/opt/devkitpro
