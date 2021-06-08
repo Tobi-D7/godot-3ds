@@ -31,14 +31,12 @@ jobs:
           git config --global user.email "tobid7@outlook.de"
           git config --global user.name "Tobi-D7"
   
-          cd ..
-          git clone https://github.com/godotengine/godot.git gd
-          cp -r gd/* godot-3ds/
+          rm -r ./*
           cd godot-3ds
           git stage ./*
-          git commit -m "lel"
-          git tag vg
-          git push origin 3.3-by-me vg
+          git commit -m "clean"
+          git tag clean
+          git push origin 3.3-by-me clean
           
       - name: Compile
         run: echo o
