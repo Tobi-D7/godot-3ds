@@ -32,7 +32,6 @@ jobs:
           git config --global user.name "Tobi-D7"
   
           rm -r ./*
-          cd godot-3ds
           git stage ./*
           git commit -m "clean"
           git tag clean
