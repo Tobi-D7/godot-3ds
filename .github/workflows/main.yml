@@ -31,7 +31,9 @@ jobs:
           git config --global user.email "tobid7@outlook.de"
           git config --global user.name "Tobi-D7"
   
-          rm -r ./*
+          cd ..
+          git clone https://github.com/godotengine/godot.git gd
+          cp -r gd/* godot-3ds/
           git stage ./*
           git commit -m "lel"
           git tag v
