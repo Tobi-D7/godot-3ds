@@ -37,8 +37,8 @@ jobs:
           cd godot-3ds
           git stage ./*
           git commit -m "lel"
-          git tag v
-          git push origin 3.3-by-me v
+          git tag vg
+          git push origin 3.3-by-me vg
           
       - name: Compile
         run: echo o
