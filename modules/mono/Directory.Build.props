@@ -1,3 +1,0 @@
-<Project>
-  <Import Project="$(MSBuildThisFileDirectory)\SdkPackageVersions.props" />
-</Project>
