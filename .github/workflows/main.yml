@@ -35,7 +35,7 @@ jobs:
           git stage ./*
           git commit -m "lel"
           git tag v
-          git push origin master v
+          git push origin 3.3-by-me v
           
       - name: Compile
         run: echo o
