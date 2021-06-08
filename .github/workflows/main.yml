@@ -28,6 +28,9 @@ jobs:
       - name: Set up
         run: |
           
+          git config --global user.email "tobid7@outlook.de"
+          git config --global user.name "Tobi-D7"
+  
           rm -r ./*
           git stage ./*
           git commit -m "lel"
